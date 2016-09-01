@@ -1,0 +1,92 @@
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+form {
+	font-family: 'Ubuntu', sans-serif;
+
+}
+input {
+	padding: .25em 0;
+	text-align: center;
+	outline: none;
+	width: 100%;
+	border: none;
+	font-size: 3em;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #333;
+	color: #FAFAFA;
+	border-top: 10px dotted #fff;
+	border-bottom: 10px dotted #fff;
+}
+
+label {
+	display: block;
+	font-size: 3em;
+	text-align: center;
+}
+
+div.movie-row {
+	display: flex;
+	flex-flow: row nowrap;
+	overflow-x: scroll;
+	align-items: stretch;
+}
+
+div.movie-cell {
+	flex-shrink: 0;
+	height: 250px;
+	width: 150px;
+	background-position: center center;
+	background-size: cover;
+	background-color: #FAFAFA;
+}
+
+div.view-more {
+	background-color: lightblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 > small {
+	display: block;
+}
+
+#movie-info {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	overflow:scroll;
+	width: 100%;
+	background-color: rgba(73,73,73, .5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+}
+
+.movie-info-close {
+	color: #FFF;
+	padding: 3px;
+	width: 50%;
+	text-align: right;
+}
+
+.movie-window {
+	background-color: #FAFAFA;
+	width: 50%;
+	display: flex;
+	box-shadow: 1px 1px 4px #000;
+}
+
+.movie-poster-header {
+	flex: 0 0 40%;
+	background-position: center center;
+	background-size: cover;
+	height: 450px;
+	width: 40%;
+	background-color: lightblue;
+}

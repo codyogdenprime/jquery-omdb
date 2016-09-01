@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>OMDB</title>
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<link href="inc/styles/style.css" rel="stylesheet" />
+		<script src="jquery.min.js"></script>
+		<script src="inc/scripts/omdb-script.js"></script>
+	</head>
+	<body>
+		<form id="searchForm">
+			<label for="searchInput">Search Movies</label>
+			<input type="text" autocomplete="off" id="searchInput" />
+		</form>
+		<div class="movies-container">
+			<div id="movie-results"></div>
+		</div>
+		<div id="movie-info">
+			<div class="movie-window">
+				<div class="movie-poster-header"></div>
+				<div>
+					<h2><span id="movie-info-title">Harry Potter and the Deathly Hallows</span><small id="movie-info-year">1999</small></h2>
+					<p><b>Plot: </b><span id="movie-info-plot"></span></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
